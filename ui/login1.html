@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <style type="text/css" >
+
+          body{
+            background-image: url('public/images/9.jpg');
+            background-size: cover;
+          }
+
+          .image{
+
+            text-align: center;
+            margin-top: 80px;
+          }
+
+          .pk{
+
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.4);
+            margin: 0 auto;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-radius: 15px;
+            -webkit-border-radius:15px;
+            -o-border-radius:15px;
+            -moz-border-radius:15px;
+            
+            font-weight: bolder;
+            box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+            font-size: 18px;
+
+          }
+
+          .pk input[type="text"]{
+
+            width:200px;
+            height: 35px;
+            border: 0;
+            border-radius: 5px;
+            -webkit-border-radius:5px;
+            -o-border-radius:5px;
+            -moz-border-radius:5px;
+            padding-left: 5px;
+            font-family: verdana;
+
+          }
+
+          .pk h4{
+            color: white;
+            padding-bottom: 10px;
+            
+          }
+
+              .pk input[type="password"]{
+
+            width:200px;
+            height: 35px;
+            border: 0;
+            border-radius: 5px;
+            -webkit-border-radius:5px;
+            -o-border-radius:5px;
+            -moz-border-radius:5px;
+            padding-left: 5px;
+            font-family: verdana;
+
+          }
+
+          .pk input[type="button"]{
+
+            border-radius:2px;
+            font-family: 'Oswald',sans-serif;
+            color:#fff;
+            font-size: 80%;
+            padding: 4px 30px;
+            border:solid #0ed6d8 3px;
+            text-transform: uppercase;
+            background: #0ed6d8;
+            text-align: center;
+          }
+
+          .pk input[type="button"]:hover{
+            
+                  color: black;
+                  border:solid #fff 3px;
+
+
+          }
+
+          .bt{
+
+            border-radius:2px;
+            font-family: 'Oswald',sans-serif;
+            color:#fff;
+            font-size: 80%;
+            padding: 4px 30px;
+            border:solid #0ed6d8 3px;
+            text-transform: uppercase;
+            background: #0ed6d8;
+            text-align: center;
+          }
+
+          .bt:hover{
+
+                color: black;
+                  border:solid #fff 3px;
+          }
+
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/ui/assets/login.js"></script>
+        <title>Login</title> 
+      </head>
+
+      <script type="text/javascript">
+     
+      </script>
+        <body>
+          <div class="top">
+        <a href="/"><img src="https://png.icons8.com/home/color/96" alt="Home" style="padding-top:20px;padding-left:20px;border:0;width:60px;height:60px;"></a>
+          <div class="image">
+            <img src="https://png.icons8.com/user/office/80" alt="login" style="border:0;width:60px;height:60px;">
+          </div>
+            <div class="pk">
+              <h4>Login<h4>
+                <form id="loginForm" action="/login" method="post">
+                  <input type="text" id="username" placeholder="Username" style="color:black"><br><br>
+                  <input type="password" id="password" placeholder="Password" style="color:black"><br><br>
+                  <input type="button" onclick="loginUser()" class="btn btn-lg btn-primary btn-block" value="Login">
+                  <h4>Not a member yet?</h4>
+                  <div id="flash"></div>
+                    <hr />
+                  <a class="bt" href="/register">REGISTER</a>
+                </form>
+            </div>
+
+  </body>
+</html>
+
+

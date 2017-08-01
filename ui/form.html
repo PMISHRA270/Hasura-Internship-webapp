@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <link href="/public/style.css" rel="stylesheet" type="text/css" >
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <title>Form</title> 
+    </head>
+        <body>
+        	<form id="mainForm" method="post" action="/form">
+			<div class="top">
+				<a href="/"><img src="https://png.icons8.com/home/win8/64" alt="Home" style="padding-top:10px;padding-left:10px;border:0;width:60px;height:60px;"></a>
+				<div class="center">
+					<h1>Please fill in the following details to find yourself a right music partner</h1>
+				</div>
+				<div class="info">
+					<h3>Name</h3>
+					<input type="text" id="name" placeholder="your name" />
+					<h3>Your musical background</h3>
+					<input type="text" id="mback" placeholder="filed of music" />
+					<h3>What kind of musician are you searching for</h3>
+					<input type="text" id="jonre" placeholder="your requiremet" />
+					<h3>Phone no.</h3>
+					<input type="text" id="ph" placeholder="ph. no." />
+					<h3>Your address</h3>
+					<input type="text" id="add" placeholder="your full address" />
+				</div>
+			</div>
+			<div class="med">
+				<div class="info">
+
+					<h3>Any specific requirement</h3>
+					<input type="text" id="req" placeholder="your specific requirement" />
+					<h3>Purpose of find</h3>
+					<input type="text" id="purp" placeholder="purpose" />
+					<h3>Are you willing to pay your future partner</h3>
+					<form action="" method="">
+						<b>Yes</b>
+						<input type="radio" name="yesno" value=""></br>
+						<b>No </b>
+						<input type="radio" name="yesno" value="">
+					</form>
+				</div>
+				<div class="end">
+					 <input type="button" onclick="addinfo()" name="submit" id="butn" class ="btn btn-success" value="SUBMIT" /> 
+				</div>
+			</div>
+		</form>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://github.com/hasura/js-sdk/releases/download/v0.1.1/hasura.min.js"></script>
+    	<script src="/ui/main.js"></script>
+
+        </body>
+</html>
