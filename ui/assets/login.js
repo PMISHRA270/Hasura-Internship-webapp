@@ -3,10 +3,6 @@ window.onload = function(){
         window.location.href='/';
     }
 }
-
-/* Take username and password from text field and on button click a XMLHttpRequest (POST) is created to login.
-Cookies are set to the value of the username, auth_token and hasura_id returned as response to the request. */
-
 function loginUser(){
     //take username and password value from text field
     var username = document.getElementById("username").value;
@@ -27,7 +23,6 @@ function loginUser(){
       }
     }
   };
-    
   request.open('POST', 'http://auth.c100.hasura.me/login',false);
   request.setRequestHeader('Content-Type', 'application/json');
   request.send(JSON.stringify({username: username, password: pass}));
@@ -36,12 +31,9 @@ function loginUser(){
     document.cookie = "username="+username+"; path=/";
     document.cookie = "auth_token="+serverResponseJSON.auth_token+";path=/";
     document.cookie = "hasura_id="+serverResponseJSON.hasura_id+";path=/";
-    
-    //after login redirect to the /task page.
+    //after login redirect to the home page.
     window.location.href='/';
-    
-}
-
+    }
 //return value of the requested attribute of the cookie
 function readCookie(name) {
     var nameEQ = name + "=";
