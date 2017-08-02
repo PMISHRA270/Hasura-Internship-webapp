@@ -3,10 +3,6 @@ window.onload = function(){
         window.location.href='/';
     }
 }
-
-/* Take credentials from text fields and on button click a XMLHttpRequest (POST) is created to signup.
-    A query is made to database to enter user_id (collected from responseText) and name */
-
 function registerUser(){
     //take credentials from text boxes
     var username = document.getElementById("username").value;
