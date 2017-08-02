@@ -43,6 +43,25 @@ html,body{
 	
 
 }
+
+.top1{
+	
+	height:100%;
+	width:100%;
+	margin:auto;
+	background:
+		linear-gradient(
+		rgba(129, 169, 232,0.6),
+		rgba(240, 247, 144,0.6)
+		),
+		url('images/1.jpg') no-repeat 50% 50% ;
+	background-size: cover;
+	display: table;
+	top:0;
+	z-index: -1;
+	
+
+}
 .info{
 
 	
@@ -58,6 +77,29 @@ html,body{
 	padding-top: 20px;
 }
 
+.info1{
+
+	
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+.info1 h3{
+
+	color:orange;
+	font-family: arial;
+	padding-top: 20px;
+}
+.info1 h5{
+	text-align: center;
+	color: black;
+	font-family: verdana;
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 .med{
 
 	height:100%;
@@ -69,6 +111,24 @@ html,body{
 		rgba(240, 247, 144,0.6)
 		),
 		url('images/10.jpg') no-repeat 50% 50% ;
+	background-size: cover;
+	display: table;
+	top:0;
+	z-index: -1;
+
+}
+
+.med1{
+
+	height:100%;
+	width:100%;
+	margin:auto;
+	background:
+		linear-gradient(
+		rgba(100, 241, 201,0.6),
+		rgba(240, 247, 144,0.6)
+		),
+		url('images/9.jpg') no-repeat 50% 50% ;
 	background-size: cover;
 	display: table;
 	top:0;
@@ -202,6 +262,23 @@ html,body{
 	top:0;
 	z-index: -1;
 }
+
+.detail1{
+	height:100%;
+	width:100%;
+	margin:auto;
+	background:
+		linear-gradient(
+		rgba(243, 241, 201, 0.45),
+		rgba(0, 247, 144, 0.45)
+		),
+		url('images/9.jpg') no-repeat 50% 50% ;
+	background-size: cover;
+	display: table;
+	top:0;
+	z-index: -1;
+}
+
 
 .footer{
 
