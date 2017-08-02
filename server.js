@@ -1,4 +1,5 @@
 
+
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
@@ -24,6 +25,10 @@ app.get('/login', function (req, res) {
 
 app.get('/form', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'form.html'));
+});
+
+app.get('/careers', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'careers.html'));
 });
 
 app.use('/public',express.static('public'));
@@ -54,3 +59,4 @@ app.get('/Profile', function (req, res) {
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
 });
+
